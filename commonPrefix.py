@@ -7,6 +7,7 @@ class Solution(object):
         :type strs: List[str]
         :rtype: str
         """
+        # function to find out common prefix between 2 strings 
         def commonPrefixUtil(str1, str2):
             n1 = len(str1)
             n2 = len(str2)
@@ -22,7 +23,7 @@ class Solution(object):
                 j += 1
             return result
 
-        
+        # finding out the longest common prefix among the list of strings
         prefix = strs[0]
         
         for i in range(1,len(strs)):
